@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="flex-row justify-between" style="padding: 24px 80px;">
+            <img src="./assets/Logo.png" alt="coffee-logo" width="40" height="40"/>
+            <nav class="grid-container">
+                <ul class="menu nav-header-item">
+                    <li>
+                      <a href="#">Products</a>
+                      <ul>
+                        <li><a href="#">Products 1</a></li>
+                        <li><a href="#">Products 2</a></li>
+                        <li><a href="#">Products 3</a></li>
+                        <li><a href="#">Products 4</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="menu nav-header-item">
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                </ul>
+                <ul class="menu nav-header-item">
+                    <li>
+                      <a href="#">Testimonial</a>
+                      <ul>
+                        <li><a href="#">Testimonial 1</a></li>
+                        <li><a href="#">Testimonial 2</a></li>
+                        <li><a href="#">Testimonial 3</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="menu nav-header-item">
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div style="width: 64px; height: 24px; display: grid; grid-template-columns: auto auto; grid-gap: 16px; align-items: center;">
+                <img src="./assets/Icon Search.png" alt="icon-search">
+                <img src="./assets/ShoppingBagOpen.png" alt="shopping-bag-icon">
+            </div>
+            <a href="javascript:void(0);" class="icon hamburger-menu" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="myLinks">
+            <a href="#news">Products</a>
+            <a href="#contact">About us</a>
+            <a href="#about">Testimonial</a>
+            <a href="#about">Contact</a>
+        </div>
+    </header>
+    <section id="explore-product">
+            <div class="enjoy-quote-container">
+                <p class="enjoy-quote">
+                    Enjoy Your Favourite Coffee With Ngopi
+                </p>
+                <p class="enjoy-quote-detail tooltip">Discover tranquility at Ngopi a sanctuary for unwinding,
+                    where your evenings are perfected with relaxation and rich flavors<span class="tooltiptext">Welcome to Ngopi</span></p>
+                <button class="brown-btn">
+                    <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;">
+                        Explore product <img src="./assets/ArrowDownRight.png" alt="arrow-down-img"/>
+                    </div>
+                </button>
+            </div>
+            <div class="explore-product-image-list">
+                <img src="./assets/product1.png" alt="product-1">
+                <img src="./assets/product2.png" alt="product-2">
+                <img src="./assets/product3.png" alt="product-3">
+                <img src="./assets/product4.png" alt="product-4">
+                <img src="./assets/product5.png" alt="product-5">
+            </div>
+    </section>
+    <hr/>
+    <section id="product-quantity">
+            <div class="product-quantity-info"><span class="quantity-number">30+</span> Coffee Variant</div>
+            <div class="vl"></div>
+            <div class="product-quantity-info"><span class="quantity-number">20+</span> Meeting Room</div>
+            <div class="vl"></div>
+            <div class="product-quantity-info"><span class="quantity-number">25+</span> Event Space</div>
+            <div class="vl"></div>
+            <div class="product-quantity-info"><span class="quantity-number">40+</span> Global Achievement</div>
+    </section>
+    <hr/>
+    <section id="child-section">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
+            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+                Our products
+            </p>
+            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">From Top Quality Materials</p>
+        </div>
+        <div class="list-section">
+            <div class="our-product-menu-bar">
+                <div class="our-product-menu-bar-item active-menu-item">Latte</div>
+                <div class="our-product-menu-bar-item">Robusta</div>
+                <div class="our-product-menu-bar-item">Acabica</div>
+            </div>
+            <div class="our-product-list">
+                <div class="our-product-list-item">
+                    <img src="./assets//ChocolateLatte.png" alt="ChocolateLattee"/>
+                    <span>Chocolate Latte</span>
+                    <div class="rate-container">
+                        <img src="./assets/Star 1.png" alt="star"/>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">4.9</span>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72;">( 360 reviews )</span>
+                    </div>
+                    <p style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72; margin: 0px; line-height: 22.4px">Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">$2.9</span>
+                        <button class="plus-btn">+</button>
+                    </div>
+                </div>
+                <div class="our-product-list-item">
+                    <img src="./assets//MochaLatte.png" alt="MochaLatte.png"/>
+                    <span>Mocha Latte</span>
+                    <div class="rate-container">
+                        <img src="./assets/Star 1.png" alt="star"/>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">5.0</span>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72;">( 180 reviews )</span>
+                    </div>
+                    <p style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72; margin: 0px; line-height: 22.4px">Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">$2.9</span>
+                        <button class="plus-btn">+</button>
+                    </div>
+                </div>
+                <div class="our-product-list-item">
+                    <img src="./assets//CoffeeLatte.png" alt="CoffeeLatte.pnge"/>
+                    <span>Coffee Latte</span>
+                    <div class="rate-container">
+                        <img src="./assets/Star 1.png" alt="star"/>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">4.8</span>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72;">( 450 reviews )</span>
+                    </div>
+                    <p style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72; margin: 0px; line-height: 22.4px">Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">$2.9</span>
+                        <button class="plus-btn">+</button>
+                    </div>
+                </div>
+                <div class="our-product-list-item">
+                    <img src="./assets//HazuInutLatte.png" alt="HazuInutLatte.pnge"/>
+                    <span>HazuInut Latte</span>
+                    <div class="rate-container">
+                        <img src="./assets/Star 1.png" alt="star"/>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">4.9</span>
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72;">( 390 reviews )</span>
+                    </div>
+                    <p style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 16px;font-weight: 300;opacity: 0.72; margin: 0px; line-height: 22.4px">Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla</p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <span style="font-family: 'Inter', sans-serif;color: rgba(40, 42, 58, 1); font-size: 20px;font-weight: 600;opacity: 0.7;">$2.9</span>
+                        <button class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination-list">
+                <div class="pagination-dot active-dot"></div>
+                <div class="pagination-dot"></div>
+                <div class="pagination-dot"></div>
+                <div class="pagination-dot"></div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <section id="child-section">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
+            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+                About us
+            </p>
+            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">Why we are the best</p>
+        </div>
+        <div class="about-us-container">
+            <div class="about-us-detail-container">
+                <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.</p>
+                <button class="brown-btn">
+                    <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;">
+                        Read more <img src="./assets/ArrowDownRight.png" alt="arrow-down-img"/>
+                    </div>
+                </button>
+            </div>
+            <div class="about-us-pic-container">
+                <img src="./assets/about-us-pic1.png" alt="about-us-1" style="position: absolute; bottom: 0; left: 0%;"/>
+                <img src="./assets/about-us-pic2.png" alt="about-us-2" style="position: absolute; top: 0; right: 0%;"/>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <section id="child-section">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
+            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+                Testimonial
+            </p>
+            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">What our buyers say</p>
+        </div>
+        <div class="list-section">
+            <div class="testimonial-list">
+                <div class="testimonial-list-item">
+                    <div class="buyer-container">
+                        <img src="https://s3-alpha-sig.figma.com/img/5cb9/9724/f776a13ba7cb160348efa4d7adb00b95?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JVtOORUGRhlrhVMPtTX4iuW-hsmdzYIGzneaT8nS2kfoM7r46HN8SGEWQz2P~ZMxqzgR-4hU1el8fM3vDJ239RnqdY98YLLvBa47vtiG8ZZhiVtN2SdDq1JhOOcDDhdqvvORbq5x3HKZZmr3S6CnyJS~T4Su3w30vw4tLzyItX3VyiYLl7YfuPdebacmEwkzVXK5Pwf7EYfF0D1b0SwWNfQbclRRoGWkSegzWyE9YKRxTZJLPS5OtjopDDaL2bRsGCJH1qkS3D-kMWYNBMcubcc2xIXseoQiKRRfG8sRacZJZ0bgsxqzKbHnipzSiccC9eau5jAgqQeASrIm5NGb0w__"
+                        alt="buyer1"/>
+                        <div>
+                            <span>Michael Wong</span>
+                            <div>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</p>
+                </div>
+                <div class="testimonial-list-item">
+                    <div class="buyer-container">
+                        <img src="https://s3-alpha-sig.figma.com/img/e927/d4df/ab333f45dbcbb6362feb605eaa0da7f1?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f7mf3GZjyPW0pYc7CHzN2bZjBdwSQh9rkXXLqavK1tLUplvi~zr5uBcy2JrtKgs5lCfbVUcWcMiflQvyvVWfQqcKt-ifFEpHWgTY8VqHDsnAr9qPB3HwLSe52LpM9dURBlYEqQXh9MrUHbdOB39w4WOQEEQDqUQKq5vmyKOPOzfnz7Gziyf38tq10XnKE7w2MfvAPj90IfETfi9ghvH9UrM6Zlu8wpTx-S2sf2mwJYGZuaq8xL9kVQUrxRJKHth95~31ZBZAmJE3pIfrg~z3JJd-x6poXjxYvFRlSzEnA~uLFrQ3akWipdT~B79dZmFUyVqq-GVX-VxjzPuz02Sy9A__"
+                        alt="buyer1"/>
+                        <div>
+                            <span>Avril Song</span>
+                            <div>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 5.png" alt="star"/>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.</p>
+                </div>
+                <div class="testimonial-list-item">
+                    <div class="buyer-container">
+                        <img src="https://s3-alpha-sig.figma.com/img/9d26/58d1/8d3fe03fc8a291060799cb4599a32373?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gw8YueUZUL0OONDw~b2kdfWfmghxZL45PN9lfxMRfrkmXVB1cSsCtfTH3LGXEFs6RGEL0VaL01ecCxOt2PBidcbc-mVK8ntRRKuf6WUmqcnMTMqDFxXMbVH7pNE5vDNEjUAjCZNrJnkLcVnwNl85Fyl7rl1OOUTFqclK5LzWaiG6Rpu7-FPVMrDtnsAcD9qSbnmHS5jly48Z2z0y~bhK1es4Hhv7ws8pEzN0BWzNXeiLRJ3dg~9oEr81qlwnClDqU-zTJNdhfcxuZrCXXl0fXQryRxxsd~v1lLFpXmGNDzodn6VsJUlbaaxPyOe4eZMIvQn1e46IQkXQqExAcwyNQQ__"
+                        alt="buyer1"/>
+                        <div>
+                            <span>Jeanne Wood</span>
+                            <div>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 1.png" alt="star"/>
+                                <img src="./assets/Star 5.png" alt="star"/>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.</p>
+                </div>
+            </div>
+            <div class="pagination-list">
+                <div class="pagination-dot active-dot"></div>
+                <div class="pagination-dot"></div>
+                <div class="pagination-dot"></div>
+                <div class="pagination-dot"></div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <section id="child-section">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
+            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+                Blog
+            </p>
+            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">Read our articles</p>
+        </div>
+        <div class="list-section">
+            <div class="article-list">
+                <div class="article-list-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/e507/e9d6/ccc543a09490fc4b40e103f509cf2be7?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dzirw6l9NcR0ua7ahnGL8QfPvtJ6v-QtCVZQSujmgnKxUL~lUOyPa4OV4hAG~RYEPEvNCiLBGqc1HfM9fvp5GkQRCSR5k9JA4FXQmLUwDCYdobG~F1lCyvzRypb6RNnPRgnaR~38DB7cYkPc6kFgMG5c-EuLJd1UwNEpYmr2gyl2jhvu8KFYEewLUvxgYnoT1DbxiJJxPm8ejR1RwVV26CQx0nG4O8DpNPRS0EtskClpZJtqTMFlLYEKSNjiFpH5wfXcESBuZEPmk9ukGSIpwhrDqFDI~JZe-ezMe7VwAVpfxRq419QHIEP-EEiTcl-7W-1Cphw0XjxlzGp289ArGA__"
+                    alt="article-1"/>
+                    <div style="display: flex; justify-content: space-between; font-family: Inter, serif; font-weight: 300; font-size: 14px">
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/User.png"/>John Doe</span>
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/CalendarBlank.png"/>Feb 23, 2024</span>
+                    </div>
+                    <span style="font-family: Plus Jakarta Sans, serif; font-weight: 600; font-size: 24px; line-height: 33.6px;">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.</span>
+                    <div style="display: flex; flex-direction: row; gap: 8px; justify-content: end;">
+                        <span style="font-family: Inter, serif; font-weight: 300; font-size: 16px;">View details</span>
+                        <img src="./assets/CaretRight.png" alt="arrow-right"/>
+                    </div>
+                </div>
+                <div class="article-list-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/14b2/8578/d0cc8976f63e0749bfde8a3ccec5d4fe?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZIf~lRMX1iaM1D7A5IyWVvcKusxa6rxih9iSlygxk0f-hk1gxt39aqoryTiR9qJKIXYUbkzI56Qg1cpwymdCXiSSOi-4YCfHgpaGqFZPOPizTX81X7yOWvtPCgz7JM7OIOtNwWGeqG6KTZQMFMl~2Vcy7DOFKFRuM~~W2Lc36S28O17np7RFVt32~32~CftMYQl9A-n0v1OmXFYalxWsGX-FskXpBfEoTaOT5Za2hLic1PudJWGge~7MBVX42loC7RYbHlysLfkrA4oKZODhfT01uofEX0mB6pHi9qUGzmR0l5QXZGIaRetqihO9jKs3nStB0B6ZUrydzlXfLXADNA__"
+                    alt="article-1"/>
+                    <div style="display: flex; justify-content: space-between; font-family: Inter, serif; font-weight: 300; font-size: 14px">
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/User.png"/>John Doe</span>
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/CalendarBlank.png"/>Feb 23, 2024</span>
+                    </div>
+                    <span style="font-family: Plus Jakarta Sans, serif; font-weight: 600; font-size: 24px; line-height: 33.6px;">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.</span>
+                    <div style="display: flex; flex-direction: row; gap: 8px; justify-content: end;">
+                        <span style="font-family: Inter, serif; font-weight: 300; font-size: 16px;">View details</span>
+                        <img src="./assets/CaretRight.png" alt="arrow-right"/>
+                    </div>
+                </div>
+                <div class="article-list-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/e1d0/56eb/f3aac84fe860d3bbad0a52d284a903cd?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M6Slndb2GqEth62AeoFUGJA1L6VwQTnRZfFyyUV54NI4fZ~eRDU-oWu2xdZrV86crDx7MA1lcIaFrOpr1MMKNQWIx5ePBv7P7P1SxFK2qKig6EVJTl0sLyCXaMCRMor9KpVTyFsvA6922U1r~EUIvZXSWzGm-gNdKPhnsMZSRvslbzJFNsIgDMm6lkhX6fcgmTVVcjVq7~lCft80mSRGjviEzGl4PN3Z45HJkMtXr7pf96olid-qaCqWdRzsXHHTqvoSCVoi~3CAVR3dGwqOJNOmZYwz8Dg5BpHOi8LDAKqlBNdqqQpG-pygpGuLvjeErlNV27paQgnQBKapW2RpUw__"
+                    alt="article-1"/>
+                    <div style="display: flex; justify-content: space-between; font-family: Inter, serif; font-weight: 300; font-size: 14px">
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/User.png"/>John Doe</span>
+                        <span style="display: flex; justify-content: center; align-items: center; gap: 8px;"><img src="./assets/CalendarBlank.png"/>Feb 23, 2024</span>
+                    </div>
+                    <span style="font-family: Plus Jakarta Sans, serif; font-weight: 600; font-size: 24px; line-height: 33.6px;">Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.</span>
+                    <div style="display: flex; flex-direction: row; gap: 8px; justify-content: end;">
+                        <span style="font-family: Inter, serif; font-weight: 300; font-size: 16px;">View details</span>
+                        <img src="./assets/CaretRight.png" alt="arrow-right"/>
+                    </div>
+                </div>
+            </div>
+            <button class="brown-btn">
+                <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;">
+                    Read more <img src="./assets/ArrowDownRight.png" alt="arrow-down-img"/>
+                </div>
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info-container">
+            <div style="display: flex; flex-direction: row; gap: 24px; font-weight: 600; font-size: 48px; color: white; font-family: Inter, serif;">
+                <img src="./assets/LogoWhite.png" alt="logo-info"/>
+                <span>Ngopi</span>
+            </div>
+            <span style="font-weight: 300; font-size: 20px; color: white; font-family: Inter, serif; line-height: 32px;">Discover tranquility at Ngopi a sanctuary for unwinding, where your evenings are perfected with relaxation and rich flavors.</span>
+            <span style="font-weight: 300; font-size: 20px; color: white; font-family: Inter, serif; line-height: 30px;">hello@ngopi.com<br/>Phone : +01 23456789</span>
+        </div>
+        <div role="other-links" style="display: flex; flex-direction: column; gap: 40px;">
+            <div style="display: flex; flex-direction: row; justify-content: space-between; color: white; flex-wrap: wrap;">
+                <div class="link-list-container">
+                    <span>Quick links</span>
+                    <ul>
+                       <p>Services</p>
+                       <p>Portfolio</p>
+                       <p>About us</p>
+                       <p>Testimonial</p> 
+                    </ul>
+                </div>
+                <div class="link-list-container">
+                    <span>Resources</span>
+                    <ul>
+                        <p>Support</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </ul>
+                </div>
+                <div class="link-list-container">
+                    <span>Social Media</span>
+                    <div class="social-list-container">
+                        <img src="./assets/Facebook.png" alt="facebook">
+                        <img src="./assets/Twitter.png" alt="twitter">
+                        <img src="./assets/Instagram.png" alt="instagram">
+                        <img src="./assets/Linkedin.png" alt="linkedin">
+                        <img src="./assets/Youtube.png" alt="youtube">
+                    </div>
+                </div>
+            </div>
+            <div class="link-list-container">
+                <span>Subscribe</span>
+                <div class="email-container">
+                    <div class="email-input-container">
+                        <img src="./assets/EnvelopeSimple.png" alt="email-icon"/>
+                        <input type="email" placeholder="name@domain.com"/>
+                    </div>
+                    <button class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+}
+</script>
+</html>
