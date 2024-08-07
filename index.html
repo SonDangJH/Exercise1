@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="flex-row justify-between" style="padding: 24px 80px;">
+        <div class="flex-row justify-between" style="padding: 24px 24px;">
             <img src="./assets/Logo.png" alt="coffee-logo" width="40" height="40"/>
             <nav class="grid-container">
                 <ul class="menu nav-header-item">
@@ -62,7 +62,8 @@
             <a href="#about">Contact</a>
         </div>
     </header>
-    <section id="explore-product">
+    <main>
+        <section id="explore-product">
             <div class="enjoy-quote-container">
                 <p class="enjoy-quote">
                     Enjoy Your Favourite Coffee With Ngopi
@@ -95,11 +96,11 @@
     </section>
     <hr/>
     <section id="child-section">
-        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
-            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 100%">
+            <p class="title-section">
                 Our products
             </p>
-            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">From Top Quality Materials</p>
+            <p class="description-section">From Top Quality Materials</p>
         </div>
         <div class="list-section">
             <div class="our-product-menu-bar">
@@ -175,11 +176,11 @@
     </section>
     <hr/>
     <section id="child-section">
-        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
-            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 100%">
+            <p class="title-section">
                 About us
             </p>
-            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">Why we are the best</p>
+            <p class="description-section">Why we are the best</p>
         </div>
         <div class="about-us-container">
             <div class="about-us-detail-container">
@@ -200,11 +201,11 @@
     </section>
     <hr/>
     <section id="child-section">
-        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
-            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 100%">
+            <p class="title-section">
                 Testimonial
             </p>
-            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">What our buyers say</p>
+            <p class="description-section">What our buyers say</p>
         </div>
         <div class="list-section">
             <div class="testimonial-list">
@@ -270,11 +271,11 @@
     </section>
     <hr/>
     <section id="child-section">
-        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 630px">
-            <p style="font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;">
+        <div style="display: flex; flex-direction: column; gap: 8px;justify-content: center; align-items: center; width: 100%">
+            <p class="title-section">
                 Blog
             </p>
-            <p style="font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px">Read our articles</p>
+            <p class="description-section">Read our articles</p>
         </div>
         <div class="list-section">
             <div class="article-list">
@@ -325,9 +326,10 @@
             </button>
         </div>
     </section>
+    </main> 
     <footer>
         <div class="contact-info-container">
-            <div style="display: flex; flex-direction: row; gap: 24px; font-weight: 600; font-size: 48px; color: white; font-family: Inter, serif;">
+            <div style="display: flex; flex-direction: row;flex-wrap: wrap; gap: 24px; font-weight: 600; font-size: 48px; color: white; font-family: Inter, serif;">
                 <img src="./assets/LogoWhite.png" alt="logo-info"/>
                 <span>Ngopi</span>
             </div>
@@ -368,7 +370,6 @@
                 <span>Subscribe</span>
                 <div class="email-container">
                     <div class="email-input-container">
-                        <img src="./assets/EnvelopeSimple.png" alt="email-icon"/>
                         <input type="email" placeholder="name@domain.com"/>
                     </div>
                     <button class="send-btn">Send</button>

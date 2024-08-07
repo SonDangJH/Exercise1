@@ -2,14 +2,18 @@
     font-family: fontInter;
     src: url(sansation_light.woff);
   }
+  html {
+    width: 100%;
+  }
 /* Style the navigation menu */
 header {
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed;
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
-    z-index: 2;
-    height: 200px;
+    width: 100%; 
+    /* height: 300px; */
+    background-color: #f0f0f5;
+    overflow: visible;
 }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -66,9 +70,14 @@ header {
     justify-content: space-between;
 }
 
+.explore-product-image-list >img{
+    width: 168px;
+    height: 228px;
+}
+
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    flex-direction: row;
   }
   
 .grid-container .nav-header-item {
@@ -106,7 +115,7 @@ header {
   }
   
   .menu li:hover ul {
-    height: 200px;
+    height: 180px;
     opacity: 1;
     transform: translateY(0);
   }
@@ -125,6 +134,7 @@ header {
     padding: 5px 20px;
   }
 
+
 .enjoy-quote {
     font-family: Playfair Display, serif;font-weight: 500; font-size:64px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 76.8px;
 }
@@ -134,7 +144,7 @@ header {
 }
 
 .enjoy-quote-container {
-    display: flex; flex-direction: column; gap: 24px;justify-content: center; align-items: center; width: 630px;
+    display: flex; flex-direction: column; gap: 24px;justify-content: center; align-items: center; width: 80%;
 }
 
 #explore-product {
@@ -462,6 +472,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .email-container {
@@ -510,10 +521,12 @@ footer {
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 150px;
     background-color: black;
     color: #fff;
     text-align: center;
+    left: 0;
+    bottom: 0;
     font-size: 16px;
     border-radius: 6px;
     padding: 5px 0;
@@ -525,7 +538,15 @@ footer {
     visibility: visible;
   }
 
-@media screen and (max-width: 1326px) {
+.title-section {
+    font-family: Inter, serif;font-weight: 300; font-size:24px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 28.8px; opacity: 0.56;
+}
+
+.description-section {
+    font-family: Playfair Display, serif; font-weight: 300; font-size: 36px; text-align: center; color: rgba(40, 42, 58, 1); margin: 0px; line-height: 43.2px
+}
+
+@media screen and (max-width: 1440px) {
 
     .our-product-list {
         grid-template-columns: auto auto auto;
@@ -569,6 +590,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    
 
     .product-quantity-info {
         font-size: 14px;
@@ -602,21 +624,38 @@ footer {
       header .hamburger-menu {
         display: block !important;
       }
+      .article-list-item > img {
+        height:180px;
+        width:100%;
+    }
+
+    #explore-product {
+        padding: 20px;
+    
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:  768px) {
+    .explore-product-image-list {
+        gap: 4px;
+    }
+
+    .explore-product-image-list >img{
+        width: 82px;
+        height: 112px;
+    }
+}
+
+@media screen and (max-width: 425px) {
 
     .enjoy-quote {
-        font-size: 45px;
+        font-size: 36px;
     }
 
     .enjoy-quote-detail {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    .enjoy-quote-container {
-        width: 80%;
-    }
     .brown-btn {
         padding: 20px 36px;
         font-weight: 400;
@@ -644,6 +683,66 @@ footer {
 
     .send-btn {
         display: none;
+    }
+
+    .title-section {
+        font-size:14px;
+    }
+
+    .description-section {
+        font-size: 12px;
+    }
+
+    .our-product-menu-bar {
+        padding: 5px;
+        width: 220px;
+    }
+    
+    .our-product-menu-bar-item {
+        padding: 12px;
+        font-size: 12px;
+        width: 40px;
+    }
+
+    .explore-product-image-list {
+        gap: 4px;
+    }
+
+    .explore-product-image-list >img{
+        width: 48px;
+        height: 68px;
+    }
+
+    .article-list-item > img {
+        height:200px;
+        width:100%;
+    }
+
+    .email-container {
+        height: 40px;
+        border-radius: 16px;
+        padding: 4px 4px 4px 12px;
+        background-color: rgba(255, 255, 255, 0.08);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 7px;
+    }
+    
+    .email-input-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        align-items: center;
+    }
+    
+    .email-input-container > input {
+        color: rgba(255, 255, 255, 0.4);
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        background-color: transparent;
+        border: none;
     }
 }
   
